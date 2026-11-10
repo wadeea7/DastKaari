@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F7F4EC">
+<meta name="description" content="دستکاری: ہنرمند کاریگروں اور گھر والوں کو جوڑنے والا پلیٹ فارم | Dastkaari: connecting skilled tradespeople and households">
+<title>دستکاری | Dastkaari</title>
+<link rel="icon" href="images/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Nastaliq+Urdu:wght@700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { cream: '#F7F4EC', gold: '#E6A91F', sun: '#C0830B', teal: '#3F4A44', leaf: '#A9C4AE', ember: '#E0A58E', ink: '#2B322E',
+            sky: '#E9E4D6', mint: '#EAEDE3', blush: '#F3E1D8', lilac: '#EFEADB', sand: '#E3DCC9' },
+  fontFamily: { naskh: ['"Noto Naskh Arabic"', 'serif'] }
+} } };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-naskh text-base text-ink">
+<header class="sticky top-0 z-30 border-b border-sand bg-cream/95 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-2">
+    <a href="#home" class="flex items-center gap-3" aria-label="دستکاری ہوم">
+      <img src="images/logo.png" alt="دستکاری کا لوگو" class="h-12 w-12 object-contain">
+      <span class="leading-none"><span class="wordmark block">دستکاری</span><span class="en !text-xs tracking-widest">DASTKAARI</span></span>
+    </a>
+    <nav id="nav" class="hidden items-center gap-1 md:flex" aria-label="مینو">
+      <a href="#home">ہوم<small>Home</small></a><a href="#about">ہمارے بارے میں<small>About</small></a>
+      <a href="#how">کیسے کام کرتا ہے<small>How it works</small></a><a href="#faq">سوالات<small>FAQ</small></a><a href="#contact">رابطہ<small>Contact</small></a>
+    </nav>
+    <div class="flex gap-2">
+      <button id="speak" aria-label="سنیں" class="icon-btn"><i data-lucide="volume-2" class="h-5 w-5"></i></button>
+      <button id="menuBtn" aria-label="مینو کھولیں" class="icon-btn md:hidden"><i data-lucide="menu" class="h-5 w-5"></i></button>
+    </div>
+  </div>
+  <nav id="menu" class="hidden border-t border-sand px-5 pb-3 md:hidden" aria-label="موبائل مینو">
+    <a href="#home">ہوم · Home</a><a href="#about">ہمارے بارے میں · About</a><a href="#how">کیسے کام کرتا ہے · How it works</a><a href="#faq">سوالات · FAQ</a><a href="#contact">رابطہ · Contact</a>
+  </nav>
+</header>
+
+<div id="landing" data-say="دستکاری میں خوش آمدید۔ کاریگر ہیں تو پہلا بٹن دبائیں۔ کاریگر چاہیے تو دوسرا بٹن دبائیں۔">
+<section id="home" class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-10 md:grid-cols-2 md:py-16">
+  <div class="space-y-6">
+    <p class="eyebrow">اسلام آباد · راولپنڈی · واہ کینٹ<small>Islamabad · Rawalpindi · Wah Cantt</small></p>
+    <div><h1 class="text-4xl font-bold leading-[1.7] md:text-5xl md:leading-[1.7]">کام بولتا ہے</h1><p class="en text-lg">Your work speaks</p></div>
+    <div><p class="text-lg leading-loose text-ink/80">آپ کے اپنے محلے کے الیکٹریشن، پلمبر، اے سی ٹیکنیشن، کارپینٹر اور مکینک۔ کاریگر بول کر اپنا پروفائل بناتے ہیں، گھر والے کام کی تصویر دیکھ کر بھروسا کرتے ہیں۔</p>
+    <p class="en">Trusted tradespeople from your own neighbourhood. Workers join by speaking; households hire by seeing real work.</p></div>
+    <div class="grid gap-3 sm:grid-cols-2">
+      <button data-go="test" class="btn flex-col !gap-0 bg-gold"><span class="flex items-center gap-3"><i data-lucide="hard-hat" class="h-7 w-7"></i>میں کاریگر ہوں</span><small class="text-sm font-medium text-ink/70">I am a worker</small></button>
+      <button data-go="request" class="btn flex-col !gap-0 bg-teal !text-white"><span class="flex items-center gap-3"><i data-lucide="house" class="h-7 w-7"></i>مجھے کاریگر چاہیے</span><small class="text-sm font-medium text-white/75">I need a worker</small></button>
+    </div>
+    <button id="hear" class="ghost"><i data-lucide="volume-2" class="h-5 w-5"></i>سنیں <small class="text-ink/60">Listen</small></button>
+    <dl class="flex gap-8 border-t border-sand pt-5">
+      <div><dt class="text-3xl font-bold" id="sW">–</dt><dd>کاریگر<small class="en">Workers</small></dd></div>
+      <div><dt class="text-3xl font-bold" id="sC">–</dt><dd>شہر<small class="en">Cities</small></dd></div>
+      <div><dt class="text-3xl font-bold" id="sT">–</dt><dd>ہنر<small class="en">Trades</small></dd></div>
+    </dl>
+    <p class="en">نمونہ ڈیٹا · Demo data for this prototype</p>
+  </div>
+  <div class="overflow-hidden rounded-2xl border border-sand bg-sky"><img src="images/hero.jpeg" alt="اوزاروں کا پرانا صندوق" class="h-full max-h-[440px] w-full object-cover"></div>
+</section>
+
+<section id="how" class="border-y border-sand bg-mint/70"><div class="mx-auto max-w-6xl px-5 py-12">
+  <h2 class="h2">کیسے کام کرتا ہے</h2><p class="en mb-8">How it works</p>
+  <div class="grid gap-6 md:grid-cols-2">
+    <div class="panel"><b class="flex items-center gap-2 text-xl"><i data-lucide="hard-hat" class="h-6 w-6 text-sun"></i>کاریگر کے لیے<small class="en !inline">For workers</small></b>
+      <ol class="mt-4 space-y-4">
+        <li class="step"><span>1</span><p><b>بول کر پروفائل بنائیں</b><small class="en">Speak to build your profile. No forms, no typing</small></p></li>
+        <li class="step"><span>2</span><p><b>"فری" کا بٹن دبائیں</b><small class="en">Tap Free so nearby households can see you</small></p></li>
+        <li class="step"><span>3</span><p><b>کام کریں، ثبوت بنائیں</b><small class="en">Do the job; your photos become your reputation</small></p></li>
+      </ol></div>
+    <div class="panel"><b class="flex items-center gap-2 text-xl"><i data-lucide="house" class="h-6 w-6 text-sun"></i>گھر والوں کے لیے<small class="en !inline">For households</small></b>
+      <ol class="mt-4 space-y-4">
+        <li class="step"><span>1</span><p><b>خراب چیز کی تصویر دکھائیں</b><small class="en">Show a photo of the problem</small></p></li>
+        <li class="step"><span>2</span><p><b>قریبی فری کاریگر چنیں، قیمت طے کریں</b><small class="en">Pick a free worker nearby and agree the price</small></p></li>
+        <li class="step"><span>3</span><p><b>کام کے بعد پہلے اور بعد کی تصویر دیکھیں</b><small class="en">Check before and after photos, then rate the work</small></p></li>
+      </ol></div>
+  </div>
+</div></section>
+
+<section id="trades" class="mx-auto max-w-6xl px-5 py-12">
+  <h2 class="h2">ہمارے ہنر</h2><p class="en mb-6">Trades on Dastkaari. Tap one to see workers</p>
+  <div id="tradeGrid" class="grid grid-cols-2 gap-3 md:grid-cols-5"></div>
+</section>
+
+<section id="about" class="border-y border-sand bg-sky/60"><div class="mx-auto max-w-6xl space-y-8 px-5 py-12">
+  <div class="max-w-3xl"><h2 class="h2">ہمارے بارے میں</h2><p class="en mb-4">About us</p>
+    <p class="text-lg leading-loose">دستکاری ان کاریگروں کے لیے بنی ہے جن کے پاس سی وی نہیں، مگر برسوں کا تجربہ اور محلے کی ساکھ ہے۔ پاکستان بیورو آف سٹیٹسٹکس کے مطابق غیر زرعی روزگار کا 72.1٪ حصہ غیر رسمی ہے، اور یہ لوگ اڈّے یا سفارش پر کام ڈھونڈتے ہیں۔ دستکاری وہی اڈّہ ہے، بس آن لائن، اور سب کے لیے کھلا۔</p>
+    <p class="en mt-2">Dastkaari is for skilled workers with decades of experience but no CV. It is the neighbourhood adda, online and open to everyone. (Source: Pakistan Bureau of Statistics, via the event brief.)</p></div>
+  <div class="grid gap-4 md:grid-cols-3">
+    <div class="panel"><i data-lucide="mic" class="h-7 w-7 text-sun"></i><b class="mt-2 block text-lg">بولیں، لکھیں نہیں</b><small class="en">Voice in, voice out. Reading is never required</small></div>
+    <div class="panel"><i data-lucide="camera" class="h-7 w-7 text-sun"></i><b class="mt-2 block text-lg">ثبوت پہلے</b><small class="en">Before and after photos, not just star ratings</small></div>
+    <div class="panel"><i data-lucide="shield-check" class="h-7 w-7 text-sun"></i><b class="mt-2 block text-lg">مناسب ریٹ</b><small class="en">A fair-rate meter so nobody is overcharged</small></div>
+  </div>
+  <div class="grid grid-cols-3 gap-3">
+    <figure><img src="images/work1.jpeg" alt="سوئچ کی مرمت" loading="lazy" class="gal"><figcaption>سوئچ کی مرمت<small class="en">Switch repair</small></figcaption></figure>
+    <figure><img src="images/work2.jpeg" alt="پائپ کا کام" loading="lazy" class="gal"><figcaption>پائپ کا کام<small class="en">Pipe work</small></figcaption></figure>
+    <figure><img src="images/work3.jpeg" alt="اے سی کی سروس" loading="lazy" class="gal"><figcaption>اے سی کی سروس<small class="en">AC service</small></figcaption></figure>
+  </div>
+</div></section>
+
+<section id="faq" class="mx-auto max-w-3xl px-5 py-12">
+  <h2 class="h2">عام سوالات</h2><p class="en mb-6">Frequently asked questions</p>
+  <div class="space-y-3">
+    <details class="faq"><summary>کیا لکھنا پڑھنا آنا ضروری ہے؟<small class="en">Do I need to read or write?</small></summary><p>نہیں۔ ہر اسکرین پر سنیں کا بٹن ہے، اور کاریگر صرف بول کر جواب دیتے ہیں۔</p></details>
+    <details class="faq"><summary>کیا یہ مفت ہے؟<small class="en">Is it free?</small></summary><p>یہ نمونہ ہے اور اس میں ادائیگی شامل نہیں۔ قیمت کاریگر اور گھر والے آپس میں طے کرتے ہیں۔</p></details>
+    <details class="faq"><summary>میں کاریگر پر بھروسا کیسے کروں؟<small class="en">How do I trust a worker?</small></summary><p>ہر کاریگر کا مقام، تجربہ، کام کی تصویریں اور گاہکوں کی رائے پروفائل میں دیکھیں۔</p></details>
+    <details class="faq"><summary>آواز کام نہیں کر رہی؟<small class="en">Voice is not working?</small></summary><p>گوگل کروم استعمال کریں اور مائیک کی اجازت دیں۔ ورنہ اپنا کام بٹن سے چن لیں۔</p></details>
+  </div>
+</section>
+
+<section id="contact" class="border-t border-sand bg-mint/70"><div class="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-2">
+  <div><h2 class="h2">رابطہ</h2><p class="en mb-4">Contact us</p><p class="leading-loose">کوئی سوال یا مشورہ ہو تو لکھ بھیجیں، ہم جواب دیں گے۔</p><p class="en">Questions or suggestions? Send us a note.</p></div>
+  <form id="contactForm" class="panel space-y-3">
+    <label class="block">آپ کا نام <small class="en !inline">Name</small><input name="name" required maxlength="80" class="field"></label>
+    <label class="block">فون نمبر <small class="en !inline">Phone (optional)</small><input name="phone" type="tel" inputmode="tel" maxlength="30" class="field" dir="ltr"></label>
+    <label class="block">پیغام <small class="en !inline">Message</small><textarea name="message" required rows="3" maxlength="1000" class="field"></textarea></label>
+    <button class="btn bg-gold" type="submit">بھیجیں<small class="en !inline">Send</small></button>
+  </form>
+</div></section>
+</div>
+
+<div id="app" class="mx-auto hidden max-w-xl px-5 pb-6 pt-6">
+  <div class="mb-6 flex items-start gap-3">
+    <button id="back" aria-label="واپس" class="icon-btn mt-1 shrink-0"><i data-lucide="arrow-right" class="h-5 w-5"></i></button>
+    <div><h1 id="title" class="text-[1.75rem] font-bold leading-[1.6]"></h1><p id="sub" class="en"></p></div>
+  </div>
+  <main class="relative">
+<section id="test" class="screen hidden space-y-6" data-title="استاد کا امتحان" data-sub="Ustaad's test" data-say="بولنے کے لیے بڑا بٹن دبائیں اور جواب دیں۔">
+      <div id="dots" class="flex gap-2 text-sun"></div>
+      <div class="rounded-3xl bg-white p-5 shadow-[0_10px_26px_-16px_rgba(43,50,46,.3)]">
+        <div class="flex items-center justify-between">
+          <p class="text-sm text-ink/60">سوال <span id="qn">1</span> / <span id="qt">4</span></p>
+          <button id="qspeak" aria-label="سوال سنیں" class="grid h-10 w-10 place-items-center rounded-full bg-sky"><i data-lucide="volume-2" class="h-5 w-5"></i></button>
+        </div>
+        <div id="wave" class="wave my-3" aria-hidden="true"></div>
+        <p id="qtext" class="text-xl font-bold leading-[2]"></p>
+      </div>
+      <div id="tradePick" class="flex flex-wrap gap-2"></div>
+      <div class="grid place-items-center pt-4">
+        <button id="mic" class="mic" aria-label="بولیں"><i data-lucide="mic" class="h-10 w-10"></i></button>
+        <p class="mt-9 text-lg font-bold">دبائیں اور بولیں</p>
+        <p class="text-sm text-ink/60">Tap and speak</p>
+        <p id="heard" class="mt-3 min-h-[1.75rem] text-center text-teal"></p>
+      </div>
+      <div class="bar"><button id="next" class="btn bg-gold" disabled>آگے <i data-lucide="check" class="h-5 w-5"></i></button></div>
+    </section>
+
+    <section id="profile" class="screen hidden space-y-6" data-title="آپ کا مقام" data-sub="Your level" data-say="آپ استاد ہیں۔ نیچے فری یا مصروف کا بٹن دبائیں۔">
+      <div class="grid place-items-center pt-3">
+        <div class="medal"><i data-lucide="star" class="h-12 w-12 fill-gold"></i></div>
+        <p id="pName" class="mt-7 text-2xl font-bold">رفیق احمد · استاد</p>
+        <p id="pEn" class="text-sm text-ink/60">Rafiq Ahmed · Ustaad · Electrician</p>
+      </div>
+      <div>
+        <div class="grid grid-cols-3 gap-3">
+          <label class="slot"><input type="file" accept="image/*" capture="environment" hidden><i data-lucide="camera"></i></label>
+          <label class="slot"><input type="file" accept="image/*" capture="environment" hidden><i data-lucide="camera"></i></label>
+          <label class="slot"><input type="file" accept="image/*" capture="environment" hidden><i data-lucide="camera"></i></label>
+        </div>
+        <p class="mt-3 text-center text-ink/70">آپ کے کام کی تصویریں</p>
+      </div>
+      <div class="bar">
+        <button id="bFree" class="btn tg free" data-on="true"><i data-lucide="check" class="h-5 w-5"></i>فری</button>
+        <button id="bBusy" class="btn tg busy" data-on="false"><i data-lucide="x" class="h-5 w-5"></i>مصروف</button>
+      </div>
+    </section>
+
+    <section id="request" class="screen hidden space-y-6" data-title="مسئلہ دکھائیں" data-sub="Show the problem" data-say="خراب چیز کی تصویر کھینچیں۔">
+      <label class="slot !aspect-[4/3] !rounded-3xl" data-keep="before">
+        <input type="file" accept="image/*" capture="environment" hidden>
+        <div class="grid place-items-center gap-2 text-teal"><i data-lucide="camera" class="h-14 w-14"></i><b class="text-xl">تصویر کھینچیں</b></div>
+      </label>
+      <div id="aiCard" class="hidden space-y-3 rounded-3xl bg-white p-5 shadow-[0_10px_26px_-16px_rgba(43,50,46,.3)]">
+        <div class="flex items-center justify-between"><b class="text-lg">بجلی کا کام</b><span class="rounded-full bg-ember px-3 text-sm font-bold">فوری</span></div>
+        <p class="flex items-center gap-2"><i data-lucide="triangle-alert" class="h-4 w-4 shrink-0 text-ember"></i>پہلے مین سپلائی بند کر دیں۔</p>
+        <div class="meter"><i style="left:50%"></i></div>
+        <p class="text-sm text-ink/60">عام ریٹ: 800 – 1500 روپے · AI اندازہ (نمونہ)</p>
+      </div>
+      <div class="bar"><button data-go="workers" class="btn bg-gold">قریبی کاریگر دیکھیں <i data-lucide="search" class="h-5 w-5"></i></button></div>
+    </section>
+
+    <section id="workers" class="screen hidden space-y-5" data-title="قریبی کاریگر" data-sub="Workers near you" data-say="علاقہ چنیں، پھر فری کاریگر پر دبائیں۔">
+      <div id="filters" class="space-y-3">
+        <div id="cities" class="flex gap-2"></div>
+        <div id="tiles" class="flex gap-2 overflow-x-auto pb-1"></div>
+        <div id="trades" class="flex gap-2 overflow-x-auto pb-1"></div>
+        <p id="count" class="text-sm text-ink/60"></p>
+      </div>
+      <div id="list" class="grid gap-4 md:grid-cols-2"></div>
+    </section>
+
+    <section id="deal" class="screen hidden space-y-5" data-title="قیمت طے کریں" data-sub="Agree the price" data-say="کاریگر کا پیغام سنیں اور قیمت چنیں۔">
+      <div class="flex items-center gap-4">
+        <div class="slot !aspect-square w-20 shrink-0" id="dealPhoto"><i data-lucide="camera"></i></div>
+        <div><b id="dealJob" class="text-lg"></b><p id="dealWho" class="text-sm text-ink/60"></p></div>
+      </div>
+      <div class="flex items-center gap-3 rounded-3xl bg-white p-4 shadow-[0_10px_26px_-16px_rgba(43,50,46,.3)]">
+        <button id="vn" aria-label="چلائیں" class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-teal text-white"><i data-lucide="play" class="h-5 w-5 fill-white"></i></button>
+        <div class="wave" id="vnWave" aria-hidden="true"></div>
+        <p class="text-sm text-ink/60">کاریگر کا پیغام (نمونہ)</p>
+      </div>
+      <div id="prices" class="grid grid-cols-3 gap-3 text-center">
+        <button class="price" data-p="800">800<small class="block text-sm font-medium text-ink/60">روپے</small></button>
+        <button class="price" data-p="1200">1200<small class="block text-sm font-medium text-ink/60">روپے</small></button>
+        <button class="price" data-p="1500">1500<small class="block text-sm font-medium text-ink/60">روپے</small></button>
+      </div>
+      <div class="meter"><i id="dealMark"></i></div>
+      <p id="warn" class="hidden rounded-2xl bg-blush p-3 text-center">یہ قیمت عام ریٹ سے اوپر ہے۔</p>
+      <div class="bar flex-col !gap-2">
+        <button id="agree" class="btn bg-leaf">ٹھیک ہے <i data-lucide="check" class="h-5 w-5"></i></button>
+        <button id="later" class="btn !min-h-[3rem] bg-white !text-base">بعد میں</button>
+      </div>
+    </section>
+
+    <section id="proof" class="screen hidden space-y-4" data-title="کام کا ثبوت" data-sub="Proof of work" data-say="پہلے اور بعد کی تصویر دیکھیں اور بتائیں کام کیسا تھا۔">
+      <div class="grid grid-cols-2 gap-3">
+        <div id="pBefore" class="slot !aspect-[4/5] bg-cover bg-center"><span>پہلے</span></div>
+        <label id="pAfter" class="slot !aspect-[4/5] bg-cover bg-center"><input type="file" accept="image/*" capture="environment" hidden><i data-lucide="camera"></i><span>بعد میں</span></label>
+      </div>
+      <p class="flex items-center gap-2 rounded-3xl bg-mint p-4 text-lg font-bold"><i data-lucide="sparkles" class="h-5 w-5 shrink-0 text-teal"></i>تاریں صاف اور ٹھیک لگتی ہیں<small class="mr-auto text-xs font-medium text-ink/60">AI (نمونہ)</small></p>
+      <div class="rounded-3xl bg-white p-4 shadow-[0_10px_26px_-16px_rgba(43,50,46,.3)]">
+        <p class="mb-3 font-bold"><span id="paid">1200</span> روپے ادا کیے</p>
+        <div class="meter"><i id="paidMark"></i></div>
+      </div>
+      <div class="flex items-center justify-between rounded-3xl bg-white p-4 shadow-[0_10px_26px_-16px_rgba(43,50,46,.3)]">
+        <b>کاریگر کی ریٹنگ</b><div id="stars" class="flex gap-1 text-sun"></div>
+      </div>
+      <div class="bar">
+        <button id="good" class="btn bg-leaf"><i data-lucide="thumbs-up" class="h-5 w-5"></i>اچھا</button>
+        <button id="poor" class="btn bg-ember"><i data-lucide="thumbs-down" class="h-5 w-5"></i>برا</button>
+      </div>
+    </section>
+
+  
+  </main>
+</div>
+<footer class="border-t border-sand bg-teal text-white/85"><div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-6">
+  <div class="flex items-center gap-3"><img src="images/logo.png" alt="" class="h-10 w-10 rounded-full bg-white object-contain p-0.5"><span><b class="wordmark !text-white">دستکاری</b><small class="en !text-white/70">Dastkaari · CUI Tech Fest · AI Web Forge</small></span></div>
+  <p class="en !text-white/70">نمونہ ڈیٹا · Seeded demo data. Payments and ID checks are mocked.</p>
+</div></footer>
+<div id="toast" class="pointer-events-none fixed inset-x-6 top-20 z-40 mx-auto max-w-md rounded-xl bg-ink px-4 py-3 text-center text-sm text-white opacity-0 transition-opacity"></div>
+<script src="js/app.js"></script>
+</body>
+</html>

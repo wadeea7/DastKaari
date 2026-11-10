@@ -1,0 +1,530 @@
+{
+ "cities": [
+  {
+   "id": "isb",
+   "ur": "اسلام آباد",
+   "en": "Islamabad",
+   "areas": [
+    {
+     "id": "F-10",
+     "ur": "ایف-10",
+     "en": "F-10"
+    },
+    {
+     "id": "G-9",
+     "ur": "جی-9",
+     "en": "G-9"
+    },
+    {
+     "id": "I-8",
+     "ur": "آئی-8",
+     "en": "I-8"
+    },
+    {
+     "id": "H-13",
+     "ur": "ایچ-13",
+     "en": "H-13"
+    },
+    {
+     "id": "E-11",
+     "ur": "ای-11",
+     "en": "E-11"
+    }
+   ]
+  },
+  {
+   "id": "rwp",
+   "ur": "راولپنڈی",
+   "en": "Rawalpindi",
+   "areas": [
+    {
+     "id": "Saddar",
+     "ur": "صدر",
+     "en": "Saddar"
+    },
+    {
+     "id": "Satellite Town",
+     "ur": "سیٹلائٹ ٹاؤن",
+     "en": "Satellite Town"
+    },
+    {
+     "id": "Chaklala",
+     "ur": "چکلالہ",
+     "en": "Chaklala"
+    },
+    {
+     "id": "Bahria Town",
+     "ur": "بحریہ ٹاؤن",
+     "en": "Bahria Town"
+    }
+   ]
+  },
+  {
+   "id": "wah",
+   "ur": "واہ کینٹ",
+   "en": "Wah Cantt",
+   "areas": [
+    {
+     "id": "Lalarukh",
+     "ur": "لالہ رخ",
+     "en": "Lalarukh"
+    },
+    {
+     "id": "Model Town",
+     "ur": "ماڈل ٹاؤن",
+     "en": "Model Town"
+    },
+    {
+     "id": "Officers Colony",
+     "ur": "آفیسرز کالونی",
+     "en": "Officers Colony"
+    }
+   ]
+  }
+ ],
+ "workers": [
+  {
+   "id": 1,
+   "name": "رفیق احمد",
+   "en": "Rafiq Ahmed",
+   "trade": "electrician",
+   "level": "استاد",
+   "city": "isb",
+   "area": "F-10",
+   "m": 400,
+   "rate": 1000,
+   "free": true,
+   "yrs": 22,
+   "skills": [
+    "وائرنگ",
+    "MCB پینل",
+    "گیزر"
+   ]
+  },
+  {
+   "id": 2,
+   "name": "شاہد علی",
+   "en": "Shahid Ali",
+   "trade": "electrician",
+   "level": "ماہر",
+   "city": "isb",
+   "area": "F-10",
+   "m": 900,
+   "rate": 1300,
+   "free": true,
+   "yrs": 9,
+   "skills": [
+    "سوئچ بورڈ",
+    "پنکھے",
+    "سولر"
+   ]
+  },
+  {
+   "id": 3,
+   "name": "عمران خان",
+   "en": "Imran Khan",
+   "trade": "electrician",
+   "level": "ماہر",
+   "city": "isb",
+   "area": "F-10",
+   "m": 1200,
+   "rate": 1100,
+   "free": false,
+   "yrs": 7,
+   "skills": [
+    "وائرنگ",
+    "UPS"
+   ]
+  },
+  {
+   "id": 4,
+   "name": "اسلم پرویز",
+   "en": "Aslam Pervaiz",
+   "trade": "plumber",
+   "level": "استاد",
+   "city": "isb",
+   "area": "F-10",
+   "m": 700,
+   "rate": 900,
+   "free": true,
+   "yrs": 18,
+   "skills": [
+    "لیکیج",
+    "واش روم فٹنگ",
+    "ٹینکی"
+   ]
+  },
+  {
+   "id": 5,
+   "name": "کامران بٹ",
+   "en": "Kamran Butt",
+   "trade": "electrician",
+   "level": "استاد",
+   "city": "isb",
+   "area": "G-9",
+   "m": 700,
+   "rate": 1200,
+   "free": true,
+   "yrs": 15,
+   "skills": [
+    "وائرنگ",
+    "کنڈکٹ",
+    "گیزر"
+   ]
+  },
+  {
+   "id": 6,
+   "name": "نعیم اختر",
+   "en": "Naeem Akhtar",
+   "trade": "ac",
+   "level": "ماہر",
+   "city": "isb",
+   "area": "G-9",
+   "m": 1000,
+   "rate": 1800,
+   "free": true,
+   "yrs": 8,
+   "skills": [
+    "گیس بھرنا",
+    "سروس",
+    "انسٹالیشن"
+   ]
+  },
+  {
+   "id": 7,
+   "name": "بلال حسین",
+   "en": "Bilal Hussain",
+   "trade": "electrician",
+   "level": "ماہر",
+   "city": "isb",
+   "area": "I-8",
+   "m": 1100,
+   "rate": 900,
+   "free": true,
+   "yrs": 6,
+   "skills": [
+    "پنکھے",
+    "لائٹس",
+    "سوئچ"
+   ]
+  },
+  {
+   "id": 8,
+   "name": "جاوید اقبال",
+   "en": "Javed Iqbal",
+   "trade": "carpenter",
+   "level": "استاد",
+   "city": "isb",
+   "area": "I-8",
+   "m": 600,
+   "rate": 1500,
+   "free": true,
+   "yrs": 20,
+   "skills": [
+    "دروازے",
+    "کچن کیبنٹ",
+    "پالش"
+   ]
+  },
+  {
+   "id": 9,
+   "name": "طارق محمود",
+   "en": "Tariq Mehmood",
+   "trade": "plumber",
+   "level": "ماہر",
+   "city": "isb",
+   "area": "H-13",
+   "m": 800,
+   "rate": 800,
+   "free": true,
+   "yrs": 10,
+   "skills": [
+    "لیکیج",
+    "ٹینکی",
+    "گیزر لائن"
+   ]
+  },
+  {
+   "id": 10,
+   "name": "فہد سلیم",
+   "en": "Fahad Saleem",
+   "trade": "ac",
+   "level": "ماہر",
+   "city": "isb",
+   "area": "H-13",
+   "m": 1500,
+   "rate": 1700,
+   "free": false,
+   "yrs": 5,
+   "skills": [
+    "انورٹر اے سی",
+    "گیس بھرنا"
+   ]
+  },
+  {
+   "id": 11,
+   "name": "ظہیر عباس",
+   "en": "Zaheer Abbas",
+   "trade": "mechanic",
+   "level": "ماہر",
+   "city": "isb",
+   "area": "E-11",
+   "m": 500,
+   "rate": 1400,
+   "free": true,
+   "yrs": 12,
+   "skills": [
+    "انجن",
+    "بریک",
+    "ٹیوننگ"
+   ]
+  },
+  {
+   "id": 12,
+   "name": "ریاض الدین",
+   "en": "Riaz ud Din",
+   "trade": "carpenter",
+   "level": "ماہر",
+   "city": "isb",
+   "area": "E-11",
+   "m": 950,
+   "rate": 1200,
+   "free": true,
+   "yrs": 9,
+   "skills": [
+    "فرنیچر مرمت",
+    "دروازے"
+   ]
+  },
+  {
+   "id": 13,
+   "name": "منیر احمد",
+   "en": "Munir Ahmed",
+   "trade": "electrician",
+   "level": "استاد",
+   "city": "rwp",
+   "area": "Saddar",
+   "m": 300,
+   "rate": 1000,
+   "free": true,
+   "yrs": 25,
+   "skills": [
+    "وائرنگ",
+    "MCB پینل",
+    "پرانی وائرنگ"
+   ]
+  },
+  {
+   "id": 14,
+   "name": "اکرم شاہ",
+   "en": "Akram Shah",
+   "trade": "plumber",
+   "level": "استاد",
+   "city": "rwp",
+   "area": "Saddar",
+   "m": 650,
+   "rate": 850,
+   "free": true,
+   "yrs": 19,
+   "skills": [
+    "لیکیج",
+    "واش روم فٹنگ"
+   ]
+  },
+  {
+   "id": 15,
+   "name": "وسیم راجہ",
+   "en": "Waseem Raja",
+   "trade": "ac",
+   "level": "ماہر",
+   "city": "rwp",
+   "area": "Satellite Town",
+   "m": 500,
+   "rate": 1600,
+   "free": true,
+   "yrs": 11,
+   "skills": [
+    "گیس بھرنا",
+    "انسٹالیشن",
+    "سروس"
+   ]
+  },
+  {
+   "id": 16,
+   "name": "قاسم علی",
+   "en": "Qasim Ali",
+   "trade": "electrician",
+   "level": "ماہر",
+   "city": "rwp",
+   "area": "Satellite Town",
+   "m": 1200,
+   "rate": 950,
+   "free": false,
+   "yrs": 8,
+   "skills": [
+    "سوئچ بورڈ",
+    "پنکھے"
+   ]
+  },
+  {
+   "id": 17,
+   "name": "ندیم افضل",
+   "en": "Nadeem Afzal",
+   "trade": "mechanic",
+   "level": "استاد",
+   "city": "rwp",
+   "area": "Chaklala",
+   "m": 400,
+   "rate": 1500,
+   "free": true,
+   "yrs": 21,
+   "skills": [
+    "انجن",
+    "گیئر باکس",
+    "بریک"
+   ]
+  },
+  {
+   "id": 18,
+   "name": "سہیل خان",
+   "en": "Sohail Khan",
+   "trade": "carpenter",
+   "level": "ماہر",
+   "city": "rwp",
+   "area": "Chaklala",
+   "m": 900,
+   "rate": 1300,
+   "free": true,
+   "yrs": 7,
+   "skills": [
+    "کچن کیبنٹ",
+    "دروازے"
+   ]
+  },
+  {
+   "id": 19,
+   "name": "عدیل ملک",
+   "en": "Adeel Malik",
+   "trade": "plumber",
+   "level": "ماہر",
+   "city": "rwp",
+   "area": "Bahria Town",
+   "m": 800,
+   "rate": 1000,
+   "free": true,
+   "yrs": 6,
+   "skills": [
+    "ٹینکی",
+    "گیزر لائن",
+    "لیکیج"
+   ]
+  },
+  {
+   "id": 20,
+   "name": "فرحان یوسف",
+   "en": "Farhan Yousaf",
+   "trade": "electrician",
+   "level": "ماہر",
+   "city": "rwp",
+   "area": "Bahria Town",
+   "m": 1000,
+   "rate": 1100,
+   "free": true,
+   "yrs": 5,
+   "skills": [
+    "سولر",
+    "وائرنگ",
+    "انورٹر"
+   ]
+  },
+  {
+   "id": 21,
+   "name": "مشتاق حسین",
+   "en": "Mushtaq Hussain",
+   "trade": "electrician",
+   "level": "استاد",
+   "city": "wah",
+   "area": "Lalarukh",
+   "m": 350,
+   "rate": 950,
+   "free": true,
+   "yrs": 23,
+   "skills": [
+    "وائرنگ",
+    "MCB پینل",
+    "موٹر"
+   ]
+  },
+  {
+   "id": 22,
+   "name": "عابد رضا",
+   "en": "Abid Raza",
+   "trade": "plumber",
+   "level": "ماہر",
+   "city": "wah",
+   "area": "Model Town",
+   "m": 500,
+   "rate": 800,
+   "free": true,
+   "yrs": 9,
+   "skills": [
+    "لیکیج",
+    "واش روم فٹنگ"
+   ]
+  },
+  {
+   "id": 23,
+   "name": "شفیق احمد",
+   "en": "Shafiq Ahmed",
+   "trade": "ac",
+   "level": "استاد",
+   "city": "wah",
+   "area": "Officers Colony",
+   "m": 700,
+   "rate": 1700,
+   "free": true,
+   "yrs": 14,
+   "skills": [
+    "گیس بھرنا",
+    "سروس",
+    "کمپریسر"
+   ]
+  },
+  {
+   "id": 24,
+   "name": "نصیر الدین",
+   "en": "Naseer ud Din",
+   "trade": "mechanic",
+   "level": "ماہر",
+   "city": "wah",
+   "area": "Lalarukh",
+   "m": 900,
+   "rate": 1300,
+   "free": false,
+   "yrs": 10,
+   "skills": [
+    "انجن",
+    "بریک",
+    "ٹیوننگ"
+   ]
+  },
+  {
+   "id": 25,
+   "name": "یاسر ممتاز",
+   "en": "Yasir Mumtaz",
+   "trade": "carpenter",
+   "level": "ماہر",
+   "city": "wah",
+   "area": "Officers Colony",
+   "m": 1100,
+   "rate": 1250,
+   "free": true,
+   "yrs": 8,
+   "skills": [
+    "فرنیچر مرمت",
+    "دروازے",
+    "پالش"
+   ]
+  }
+ ]
+}
